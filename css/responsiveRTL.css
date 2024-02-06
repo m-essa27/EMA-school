@@ -1,0 +1,304 @@
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1380px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .container {
+        max-width: 1260px;
+    }
+}
+
+@media (min-width: 1200px) {}
+
+@media (max-width: 1199.98px) {
+    .navbar .nav-link {
+        padding-left: 3px !important;
+        padding-right: 3px !important;
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .navbar .nav-link {
+        position: relative;
+    }
+
+    .navbar .nav-link::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        transform: scaleX(0);
+        height: 3px;
+        bottom: -8px;
+        border-radius: 5px;
+        background-color: var(--yellow-l1);
+        transition: transform .3s ease;
+        transform-origin: right;
+    }
+
+    .navbar .nav-link:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    .event-col {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar .nav-link {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .navbar.menuopen {
+        background-color: #ffffff !important;
+    }
+
+    .navbar.menuopen .lang-btn,
+    .navbar.menuopen .navbar-toggler {
+        color: var(--blue);
+    }
+
+    .navbar.menuopen .nav-link {
+        color: var(--gray1);
+    }
+
+    .navbar-collapse ul li:first-child {
+        margin-top: 1rem;
+        padding-top: .25rem;
+        border-top: 2px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-collapse .btn {
+        margin: .5rem 0;
+        min-width: 160px;
+    }
+
+    .navbar .container {
+        padding: 0;
+    }
+
+    .navbar .container .menu-abs {
+        height: 60px;
+        top: 0;
+        left: 50px;
+        right: auto;
+        padding: 0;
+    }
+
+    .banner .text-wr h4 span {
+        font-size: 36px;
+    }
+
+    .banner .text-wr h3 {
+        font-size: 54px;
+    }
+
+    .banner,
+    .main-slider .swiper-slide {
+        max-height: 70vw !important;
+    }
+
+    .res-cont .center {
+        font-size: 88%;
+        text-align: right;
+    }
+
+    .res-cont .img-wr {
+        opacity: .4;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    .banner .text-wr h4 span {
+        font-size: 32px;
+    }
+
+    .banner .text-wr h3 {
+        font-size: 48px;
+    }
+
+    .event-col {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .blog-card .c-content {
+        padding: 16px;
+    }
+
+    .blog-card .date {
+        margin-bottom: .5rem;
+    }
+
+    .blog-card .c-title {
+        margin-bottom: .625rem;
+        font-size: 16px;
+        max-height: 48px;
+    }
+
+    .blog-card .c-content p {
+        font-size: 14px;
+        max-height: 63px;
+    }
+
+    .result table .number {
+        width: auto;
+    }
+
+    .result .info-bar,
+    .result table th,
+    .result table td {
+        font-size: 14px;
+    }
+
+    .result-wr .form-control {
+        height: 60px;
+        font-size: 20px;
+    }
+
+    .result-wr label {
+        font-size: 18px;
+        margin-bottom: .75rem;
+    }
+
+    .result-wr {
+        padding: 1.5rem 1rem;
+    }
+
+    .py-6 {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .site-footer {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .banner .text-wr h4 span {
+        font-size: 28px;
+    }
+
+    .banner .text-wr h3 {
+        font-size: 42px;
+    }
+
+    .banner,
+    .main-slider .swiper-slide {
+        max-height: 100vw !important;
+    }
+
+    .banner .text-wr h3 {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .event-card .wr {
+        width: 40%;
+        flex: 0 0 40%;
+        margin-left: .5rem;
+    }
+
+    .event-card .c-title {
+        font-size: 15px;
+    }
+
+    .persons-slider .swiper-slide {
+        width: 195px !important;
+    }
+
+    .person-card img {
+        width: 125px;
+        height: 125px;
+    }
+
+    .person-card .name {
+        font-size: 15px;
+    }
+
+    .person-card .role {
+        font-size: 12px;
+    }
+
+    .res-cont .btn {
+        margin-left: 22%;
+    }
+
+    .big-form-wr form {
+        padding: 40px 24px;
+    }
+
+    .big-form-wr .f-sub-title {
+        margin: 1.5rem -24px;
+    }
+
+    .inner-banner .container .page-title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner .text-wr h4 span {
+        font-size: 24px;
+    }
+
+    .banner .text-wr h3 {
+        font-size: 36px;
+    }
+
+    .cont-form-wr {
+        padding: 24px 32px;
+    }
+
+    .res-cont .center {
+        font-size: 80%;
+        text-align: right;
+    }
+
+    .site-footer .f-title {
+        font-size: 17px;
+    }
+
+    .site-footer .f-item,
+    .site-footer .f-link {
+        font-size: 14px;
+    }
+
+    .site-footer .f-top .soc a {
+        margin-left: 10px;
+    }
+
+    .sec-title {
+        font-size: 1.5rem;
+    }
+
+    .py-6 {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .site-footer {
+        margin-top: 2.5rem;
+    }
+
+    .has-bread-crump .inner-banner .page-title {
+        font-size: 26px;
+    }
+
+    .breadcrumb {
+        justify-content: flex-start;
+        font-size: 13px;
+    }
+}
